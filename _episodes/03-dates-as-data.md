@@ -30,7 +30,7 @@ conserve the timestamps, you are better off handling them using one of the solut
 >
 > Challenge: pulling month, day and year out of dates 
 >
-> - In the `dates` tab of your spreadsheet you have the data from 2014 plot 3. 
+> - In the `Date` tab of the small EEBO spreadsheet you have the data from 2014 plot 3. 
 > There's a `Date collected` column.
 > - Let’s extract month, day and year from the dates to new columns. For this we 
 > can use the built in Excel functions

@@ -31,7 +31,7 @@ keyboard) should never be entered. Likewise if one of the kinds of data being
 collected is a count, only integers greater than or equal to zero should be
 allowed.
 
-To control the kind of data entered into a a spreadsheet we use Data Validation
+To control the kind of data entered into a spreadsheet we use Data Validation
 (Excel) or Validity (Libre Office Calc), to set the values that can be entered
 in each data column.
 
@@ -54,7 +54,7 @@ in each data column.
 Let's try this out by setting the plot column in our spreadsheet to only allow
 plot values that are integers between 1 and 24.
 
-1. Select the `plot_id` column
+1. Select the `Pages` column
 2. On the `Data` tab select `Data Validation`
 3. In the `Allow` box select `Whole number`
 4. Set the minimum and maximum values to 1 and 24.
@@ -112,7 +112,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >
 > We've combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: [survey_sorting_exercise](https://figshare.com/articles/survey_data_messy_quality_control/4830016)
 >
-> Once downloaded, sort the `Weight_grams` column in your spreadsheet program from `Largest to Smallest`. 
+> Once downloaded, sort the `Date` column in your spreadsheet program from `Largest to Smallest`. 
 >
 > What do you notice?
 >

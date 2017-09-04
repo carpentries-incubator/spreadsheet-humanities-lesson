@@ -106,7 +106,7 @@ subsequent calculations or analyses. For example, the average of a set of number
 that these are intended to represent missing (null) values. How these values are interpreted will depend on the software you use to
 analyze your data. It is essential to use a clearly defined and consistent null indicator.
 Blanks (most applications) and NA (for R) are good choices. White et al, 2013, explain good choices for indicating null values for different software applications in their article:
-[Nine simple ways to make it easier to (re)use your data.](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898) Ideas in Ecology and Evolution.
+[Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608/0) Ideas in Ecology and Evolution.
 
 ![White et al.](../fig/3_white_table_1.jpg)
 
@@ -127,13 +127,13 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 **Example**: merging cells.
 
 **Solution**: If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to
-see associations in the data. Merged cells will make your data unreadable by statistics software. Consider restructuring your data in
+see associations in the data. Merged cells will make your data unreadable by software. Consider restructuring your data in
 such a way that you will not need to merge cells to organize your data.
 
 
 ## <a name="units"></a> Placing comments or units in cells
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some
+**Example**: Your data was collected, in part, by a summer student who you later found out was mis-keying an author, some
 of the time. You want a way to note these data are suspect.
 
 **Solution**: Most analysis software can't see Excel or LibreOffice comments, and would be confused by comments placed within your data
@@ -144,11 +144,10 @@ another field and specify the units the cell is in.
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
-**Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.
+**Example**: You find two terms for the same title. You enter this as Great Britain -- History -- To 1485 -- Early works to 1800.; England -- Description and travel -- Early works to 1800.
 
 **Solution**: Don't include more than one piece of information in a cell. This will limit the ways in which you can analyze your data. 
-If you need both these measurements, design your data sheet to include this information. For example, include one column for number of
-individuals and a separate column for sex.
+If you need both these terms, design your data sheet to include this information. For example, have multiple columns for terms.
 
 ## <a name="field_name"></a> Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
@@ -168,39 +167,19 @@ that are excessively long. Including the units in the field names avoids confusi
 	<td> <b>Avoid </b></td><br />
 </tr>
 <tr>
-	<td> Max_temp_C</td>
-	<td> MaxTemp </td>
-	<td> Maximum Temp (°C) </td>
+	<td> Author1</td>
+	<td> Author_1 </td>
+	<td> Author 1 </td>
 </tr>
 <tr>
-	<td> Precipitation_mm</td>
-	<td> Precipitation</td>
-	<td> precmm </td>
-</tr>	
-<tr>
-	<td> Mean_year_growth</td>
-	<td> MeanYearGrowth </td>
-	<td> Mean growth/year</td>	
-</tr>	
-<tr>
-	<td> sex </td>
-	<td> sex </td>	
-	<td> M/F </td>
-</tr>
-<tr>	
-	<td> weight </td>
-	<td> weight </td>	
-	<td> w.</td>	
-</tr>
-<tr>	
-	<td> cell_type </td>
-	<td> CellType </td>
-	<td> Cell Type </td>
+	<td> Term1 </td>
+	<td> Term_1</td>
+	<td> term </td>
 </tr>
 <tr>
-	<td> Observation_01 </td>
-	<td> first_observation</td>
-	<td> 1st Obs</td>
+<td> EEBO_ID </td>
+<td> </td>
+<td> EEBO </td>
 </tr>
 </table>
 
