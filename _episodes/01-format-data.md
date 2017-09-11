@@ -71,7 +71,7 @@ Put these principles in to practice today during your Exercises.
 The cardinal rules of using spreadsheet programs for data:
 
 1. Put all your variables in columns - the thing you're measuring,
-   like 'date' or 'Authors'.
+   like 'Date' or 'Authors'.
 2. Put each observation in its own row.
 3. Don't combine multiple pieces of information in one
    cell. Sometimes it just seems like one thing, but think if that's
@@ -81,18 +81,13 @@ The cardinal rules of using spreadsheet programs for data:
    ensures that anyone can use the data, and is required by
    most data repositories.
 
-For instance, we have data from a survey of small mammals in a desert
-ecosystem. Different people have gone to the field and entered data in
-to a spreadsheet. They keep track of things like species, plot,
-weight, sex and date collected.
+For instance, we have data from tests encoded into XML in a long runing project. 
+Different people have added texts and data was entered into a spreadsheet later. 
+They keep track of things like authors, page length, terms and date published.
 
-If they were to keep track of the data like this:
-
-![multiple-info example](../fig/multiple-info.png)
-
-the problem is that species and sex are in the same field. So, if they wanted to 
-look at all of one species or look at different weight distributions by sex, 
-it would be hard to do this using this data setup. If instead we put sex and species 
+A problem is that all authors are in the same field. So, if they wanted to 
+look at all of one author or look at different publication date by author, 
+it would be hard to do this using this data setup. If instead we put authors 
 in different columns, you can see that it would be much easier. 
 
 ### Columns for variables and rows for observations
@@ -102,16 +97,12 @@ variables, rows = observations, cells = data (values).
 
 So, instead we should have:
 
-![single-info example](../fig/single-info.png)
-
 > ## Discussion
 > If not already discussed, introduce the dataset that will be used in this
-> lesson, and in the other ecology lessons, the [Early English Books Online/Text Creation Partnership](http://www.datacarpentry.org/ecology-workshop/data/). 
+> lesson, and in the other humanities lessons, the [Early English Books Online/Text Creation Partnership](https://github.com/iaine/humanities-lesson-data/data/TCP.csv). 
 >
-> The data used in the Humanities lessons are the metadata catalogue for the EEBO/TCP books that have been 
-formatted into Text Encoding Initiative (TEI) files. It is generated from the 
+> The data used in the Humanities lessons are the metadata catalogue for the EEBO/TCP books that have been formatted into Text Encoding Initiative (TEI) files.
 > 
-> This is a real dataset. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.  
 {: .discussion}
 
 
@@ -119,13 +110,9 @@ formatted into Text Encoding Initiative (TEI) files. It is generated from the
 > 
 > We're going to take a messy version of the catalogue data and describe how we would clean it up.
 >
-> 1. Download the data by clicking [here](https://ndownloader.figshare.com/files/2252083) to get it from FigShare.
+> 1. Download the data by clicking [here](https://github.com/iaine/humanities-lesson-data/data/TCP.csv) to get it from Github.
 > 2. Open up the data in a spreadsheet program. 
-> 3. You can see that there are two tabs. Two field assistants conducted the surveys, one
-in 2013 and one in 2014, and they both kept track of the data in their own way. Now
-you're the person in charge of this project and you want to be able to 
-start analyzing the data.   
-> 4. With the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet. 
+> 3. With the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet. 
 >
 > **Important** Do not forget our first piece of advice, the
 > create a new file (or tab) for the cleaned data, never
@@ -138,7 +125,7 @@ start analyzing the data.
 > > - Take about 10 minutes to work on this exercise.
 > > - All the mistakes in [02-common-mistakes](../02-common-mistakes) are present in the messy dataset. If
 > > exercise is done during a workshop, ask people what they saw as wrong with
-> > the data data. As they bring up different points, you can refer to [02-common-mistakes](../02-common-mistakes)
+> > the data. As they bring up different points, you can refer to [02-common-mistakes](../02-common-mistakes)
 > > or expand a bit on the point they brought up.
 > > - If you get a response where they've fixed the date, you can pause and go to the [03-dates-as-data](../03-dates-as-data) lesson. Or you can say you'll come back to dates at the end. 
 > {: .solution}
