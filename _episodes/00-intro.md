@@ -106,7 +106,7 @@ replicate your steps (much less retrace anyone else's), particularly if your
 stats or figures require you to do more complex calculations. Furthermore, 
 in doing calculations in a spreadsheet, it’s easy to accidentally apply a 
 slightly different formula to multiple adjacent cells. When using a 
-command-line based statistics program like R or SAS, it’s practically 
+command-line based program like R or Python, it’s practically 
 impossible to apply a calculation to one observation in your 
 dataset but not another unless you’re doing it on purpose. 
 
