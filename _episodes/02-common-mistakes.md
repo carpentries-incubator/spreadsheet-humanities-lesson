@@ -85,16 +85,14 @@ Instead you can freeze the column headers so that they remain visible even when 
 
 ## <a name="zeros"></a> Not filling in zeros
 
-It might be that when you're measuring something, it's
-usually a zero, say the number of times a rabbit
-is observed in the survey. Why bother
-writing in the number zero in that column, when it's mostly zeros?
+It might be that when you're recording data, it's
+usually a zero, say the number of times a particular author appears.
 
 However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured
 or counted it. A blank cell means that it wasn't measured and the computer will interpret it as an unknown value (otherwise known as a
 null value). 
 
-The spreadsheets or statistical programs will likely mis-interpret blank cells that you intend to be zeros. By not entering the value of
+The spreadsheets or programs will likely mis-interpret blank cells that you intend to be zeros. By not entering the value of
 your observation, you are telling your computer to represent that data as unknown or missing (null). This can cause problems with 
 subsequent calculations or analyses. For example, the average of a set of numbers which includes a single null value is always null
 (because the computer can't guess the value of the missing observations). Because of this, it's very important to record zeros as zeros and truly missing data as nulls.
@@ -107,9 +105,6 @@ that these are intended to represent missing (null) values. How these values are
 analyze your data. It is essential to use a clearly defined and consistent null indicator.
 Blanks (most applications) and NA (for R) are good choices. White et al, 2013, explain good choices for indicating null values for different software applications in their article:
 [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608/0) Ideas in Ecology and Evolution.
-
-![White et al.](../fig/3_white_table_1.jpg)
-
 
 ## <a name="formatting"></a> Using formatting to convey information 
 
