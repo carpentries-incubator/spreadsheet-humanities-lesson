@@ -99,7 +99,7 @@ So, instead we should have:
 
 > ## Discussion
 > If not already discussed, introduce the dataset that will be used in this
-> lesson, and in the other humanities lessons, the [Early English Books Online/Text Creation Partnership](https://github.com/iaine/humanities-lesson-data/data/TCP.csv). 
+> lesson, and in the other humanities lessons, the [Early English Books Online/Text Creation Partnership](https://github.com/iaine/humanities-lesson-data/data/spreadsheet/tcp_spreadsheet.csv). 
 >
 > The data used in the Humanities lessons are the metadata catalogue for the EEBO/TCP books that have been formatted into Text Encoding Initiative (TEI) files.
 > 
@@ -110,9 +110,9 @@ So, instead we should have:
 > 
 > We're going to take a messy version of the catalogue data and describe how we would clean it up.
 >
-> 1. Download the data by clicking [here](https://github.com/iaine/humanities-lesson-data/data/TCP.csv) to get it from Github.
+> 1. Download the data by clicking [here](https://github.com/iaine/humanities-lesson-data/data/spreadsheet/tcp_spreadsheet.csv) to get it from Github.
 > 2. Open up the data in a spreadsheet program. 
-> 3. With the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet. 
+> 3. With the person next to you, identify what is wrong with this spreadsheet. 
 >
 > **Important** Do not forget our first piece of advice, the
 > create a new file (or tab) for the cleaned data, never
