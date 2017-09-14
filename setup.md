@@ -5,17 +5,17 @@ permalink: /setup/
 ---
 
 > ## Data
-> **Download** this data file to your computer: [https://ndownloader.figshare.com/files/2252083](https://ndownloader.figshare.com/files/2252083) 
+> **Download** this data file to your computer: [TCP Spreadsheet](https://github.com/iaine/humanities-lesson-data/blob/master/data/spreadsheet/tcp_spreadsheet.csv) 
 >
 > #### About the data
-> The data for this lesson is a part of the Data Carpentry Ecology workshop. 
-> It is a teaching version of the Portal Database. The data in this lesson
+> The data for this lesson is a part of the Data Carpentry Humanities workshop. 
+> It is a teaching version of the EEBo/TCP metadata catalogue. The data in this lesson
 > is a subset of the teaching version that has been intentionally 'messed up'
 > for this lesson. 
 > 
 > The data for this lesson and the workshop are in the 
-> [Portal Project Teaching Database](https://figshare.com/articles/Portal_Project_Teaching_Database/1314459) 
-> available on FigShare, with a CC-BY license 
+> [Humanities Lesson data](https://github.com/iaine/humanities-lesson-data) 
+> available on FigShare, with a CC-0 license 
 > available for reuse.
 {: .prereq}
 
