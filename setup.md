@@ -5,17 +5,16 @@ permalink: /setup/
 ---
 
 > ## Data
-> **Download** this data file to your computer: [TCP Spreadsheet](https://github.com/iaine/humanities-lesson-data/blob/master/data/spreadsheet/tcp_spreadsheet.csv) 
+> **Download** this data file to your computer: [TCP Spreadsheet](https://github.com/iaine/humanities-lesson-data/blob/master/library/eebo.csv) 
 >
 > #### About the data
 > The data for this lesson is a part of the Data Carpentry Humanities workshop. 
-> It is a teaching version of the EEBo/TCP metadata catalogue. The data in this lesson
+> It is a teaching version of the EEBO/TCP metadata catalogue. The data in this lesson
 > is a subset of the teaching version that has been intentionally 'messed up'
 > for this lesson. 
 > 
 > The data for this lesson and the workshop are in the 
-> [Humanities Lesson data](https://github.com/iaine/humanities-lesson-data) 
-> available on FigShare, with a CC-0 license 
+> [Humanities Lesson data](https://github.com/iaine/humanities-lesson-data)  
 > available for reuse.
 {: .prereq}
 
