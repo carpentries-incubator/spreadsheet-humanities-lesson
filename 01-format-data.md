@@ -12,7 +12,7 @@ Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, *
 * Describe best practices for data entry and formatting in spreadsheets.
 * Apply best practices to arrange variables and observations in a spreadsheet.
 
-The most common mistake made is treating the program like it is a lab
+The most common mistake made is treating the program like it is a
 notebook - that is, relying on **context**, notes in the margin,
 spatial layout of data and fields to convey information. As humans, we
 can (usually) interpret these things, but computers are dumb, and
@@ -68,7 +68,7 @@ Put these principles in to practice today during your Exercises.
 The cardinal rules of using spreadsheet programs for data:
 
 1. Put all your **variables in columns** - the thing you're measuring,
-   like 'weight' or 'temperature'.
+   like 'Author' or 'Pages'.
 2. Put each **observation in its own row**.
 3. **Don't combine multiple pieces of information in one
    cell**. Sometimes it just seems like one thing, but think if that's
@@ -80,8 +80,8 @@ The cardinal rules of using spreadsheet programs for data:
 
 For instance, we have data from a survey of small mammals in a desert
 ecosystem. Different people have gone to the field and entered data in
-to a spreadsheet. They keep track of things like species, plot,
-weight, sex and date collected.
+to a spreadsheet. They keep track of things like EEBO id, authors, the 
+tags assigned by the editors and pages.
 
 If they were to keep track of the data like this:
 
