@@ -124,39 +124,14 @@ Underscores (`_`) are a good alternative to spaces and consider writing names in
 	<td> <b>Avoid </b></td><br />
 </tr>
 <tr>
-	<td> Max_temp_C</td>
-	<td> MaxTemp </td>
-	<td> Maximum Temp (°C) </td>
+	<td> Pages</td>
+	<td> Page Count </td>
+	<td> P </td>
 </tr>
 <tr>
-	<td> Precipitation_mm</td>
-	<td> Precipitation</td>
-	<td> precmm </td>
-</tr>	
-<tr>
-	<td> Mean_year_growth</td>
-	<td> MeanYearGrowth </td>
-	<td> Mean growth/year</td>	
-</tr>	
-<tr>
-	<td> sex </td>
-	<td> sex </td>	
-	<td> M/F </td>
-</tr>
-<tr>	
-	<td> weight </td>
-	<td> weight </td>	
-	<td> w.</td>	
-</tr>
-<tr>	
-	<td> cell_type </td>
-	<td> CellType </td>
-	<td> Cell Type </td>
-</tr>
-<tr>
-	<td> Observation_01 </td>
-	<td> first_observation</td>
-	<td> 1st Obs</td>
+	<td> Authors</td>
+	<td> Author Names</td>
+	<td> auth </td>
 </tr>
 </table>
 
