@@ -1,10 +1,10 @@
 ---
 layout: lesson
-title: Using spreadsheet programs for scientific data
+title: Using spreadsheet programs for humanities data
 root: .
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Authors:**Iain Emsley**, **Christie Bahlai**, **Aleksandra Pawlik**<br>
 Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Clare Sloggett**, **Harriet Dashnow** and
 **Ben Marwick**
 
@@ -134,7 +134,7 @@ preliminary summary statistics.
 In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are others (gnumeric, Calc
 from OpenOffice), and their functionality is similar, but Excel seems
-to be the program most used by biologists and ecologists.
+to be the program most used by humanists.
 
 In this lesson, we're going to talk about:
 
