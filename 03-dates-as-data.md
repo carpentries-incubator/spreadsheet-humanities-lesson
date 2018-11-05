@@ -167,5 +167,16 @@ Such strings will be correctly sorted in ascendng or descending order, and by
 knowing the format they can then be correctly processed by the receiving
 software.
 
+### <a href=histdate></a> Historical Dates
+
+Dates before 1899 can be an issue in Excel.
+
+If a date before 1899 is formatted as a date, as in the top row, 
+then spreadsheet programmes will see it as the number of seconds
+from 0 in the programme, not a date. It can either be formatted as a general or a number, 
+or used with either months or months and days.   
+
+![Check early dates](fig/8_excel_dates_8.jpg)
+
 Previous: [Formatting problems](02-common-mistakes.html)
 Next: [Basic quality control and data manipulation in spreadsheets.](04-quality-control.html)
