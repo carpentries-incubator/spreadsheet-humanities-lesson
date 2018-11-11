@@ -18,12 +18,14 @@ However, there are some significant problems with this particular format. Quite 
 
 For example, our data could look like this:
 	
-		species_id,genus,species,taxa
-		AB,Amphispiza,bilineata,Bird
-		AH,Ammospermophilus,harrisi,Rodent-not,censused
-		AS,Ammodramus,savannarum,Bird
+TCP,EEBO,VID,STC,Status,Author,Date,Title,Terms,Page Count,Place
+A00363,99841222,5786,STC 10479, ESTC S105494,Free,"Erasmus, Desiderius, d. 1536.; Tyndale, William, d. 1536.",1533,"A booke called in latyn Enchiridion militis christiani, and in englysshe the manuell of the christen knyght replenysshed with moste holsome preceptes, made by the famous clerke Erasmus of Roterdame, to the whiche is added a newe and meruaylous profytable preface.; Enchiridion militis Christiani. English","Spiritual life -- Modern period, 1500-.",343,  London
+A00375,99837492,1817,STC 10489; ESTC S101684,Free,"Erasmus, Desiderius, d. 1536.",1534,"An epystell of ye famous doctor Erasm[us] of Roterdam vnto the reuerende father & excellent prince, Christofer bysshop of Basyle, co[n]cernyng the forbedynge of eatynge of flesshe, and lyke constitutyons of men. &c.; De interdicto esu carnium. English",Vegetarianism -- Religious aspects -- Early works to 1800.,136,  London
+A00387,99837506,1832,STC 10504; ESTC S101698,Free,"Erasmus, Desiderius, d. 1536.; Marshall, William, fl. 1535.",1534,"A playne and godly exposytion or declaratio[n] of the co[m]mune crede (which in the Latin tonge is called Symbolum Apostolorum) and of the. x. co[m]maundementes of goddes law, newly made and put forth by the famouse clarke, Mayster. Erasmus of Roterdame, at the requeste of the moste honorable lorde, Thomas Erle of wyltshyre: father to the moste gratious and vertuous Quene Anne wyf to our most gracyous soueraygne lorde kynge Henry the. viii. Cum priuilegio.; Catechismus. English",Creeds -- Early works to 1800.; Ten commandments -- Early works to 1800.,357,  London
+A00377,99841259,5828,STC 10492; ESTC S105531,Free,"Erasmus, Desiderius, d. 1536.; Taverner, Richard, 1505?-1575.",1536,"A ryght frutefull epystle, deuysed by the moste excellent clerke Erasmns [sic], in laude and prayse of matrymony, translated in to Englyshe, by Rychard Tauernour, which translation he hathe dedicate to the ryght honorable Mayster Thomas Cromwel most worthy counseloure to our souerayne lorde kyng Henry the eyght. Cum priuilegio regali; Matrimonii encomium. English",Marriage -- Early works to 1800.,70,  London
+A00393,99845591,10500,STC 10509, ESTC S109962,Free,"Erasmus, Desiderius, d. 1536.",1536,[A ryght excellent sermon and full of frute and edificacyon of the chylde Jesus.]; Concio de puero Jesu. English,"Sermons, English -- 16th century.",52,  London
 
-In record `AH,Ammospermophilus,harrisi,Rodent-not,censused` the value for *taxa* includes a comma (`Rodent-not,censused`). 
+In record beginning A00393 the value for *STC* includes a comma (`STC 10509, ESTC S109962`). 
 If we try to read the above into Excel (or other spreadsheet programme), we will get something like this:
 
 ![Issue with importing csv format](fig/csv-mistake.png)
@@ -35,24 +37,19 @@ The value for 'taxa' was split into two columns (instead of being put in one col
 
 If you want to store your data in `*.csv` and expect that your data may contain commas in their values, you can avoid the problem discussed above by putting the values in quotes (""). This [example data file](./data/biology/species.csv) applies this rule so the actual data looks like:
 
-	species_id,genus,species,taxa
-	"AB","Amphispiza","bilineata","Bird"
-	"AH","Ammospermophilus","harrisi","Rodent-not censused"
-	"AS","Ammodramus","savannarum","Bird"
-	"BA","Baiomys","taylori","Rodent"
-	"CB","Campylorhynchus","brunneicapillus","Bird"
-	"CM","Calamospiza","melanocorys","Bird"
-	"CQ","Callipepla","squamata","Bird"
-	"CS","Crotalus","scutalatus","Reptile"
-	"CT","Cnemidophorus","tigris","Reptile"
-	"CU","Cnemidophorus","uniparens","Reptile"
+TCP,EEBO,VID,STC,Status,Author,Date,Title,Terms,Page Count,Place
+A00363,99841222,5786,"STC 10479; ESTC S105494",Free,"Erasmus, Desiderius, d. 1536.; Tyndale, William, d. 1536.",1533,"A booke called in latyn Enchiridion militis christiani, and in englysshe the manuell of the christen knyght replenysshed with moste holsome preceptes, made by the famous clerke Erasmus of Roterdame, to the whiche is added a newe and meruaylous profytable preface.; Enchiridion militis Christiani. English","Spiritual life -- Modern period, 1500-.",343,  London
+A00375,99837492,1817,"STC 10489; ESTC S101684",Free,"Erasmus, Desiderius, d. 1536.",1534,"An epystell of ye famous doctor Erasm[us] of Roterdam vnto the reuerende father & excellent prince, Christofer bysshop of Basyle, co[n]cernyng the forbedynge of eatynge of flesshe, and lyke constitutyons of men. &c.; De interdicto esu carnium. English",Vegetarianism -- Religious aspects -- Early works to 1800.,136,  London
+A00387,99837506,1832,"STC 10504; ESTC S101698",Free,"Erasmus, Desiderius, d. 1536.; Marshall, William, fl. 1535.",1534,"A playne and godly exposytion or declaratio[n] of the co[m]mune crede (which in the Latin tonge is called Symbolum Apostolorum) and of the. x. co[m]maundementes of goddes law, newly made and put forth by the famouse clarke, Mayster. Erasmus of Roterdame, at the requeste of the moste honorable lorde, Thomas Erle of wyltshyre: father to the moste gratious and vertuous Quene Anne wyf to our most gracyous soueraygne lorde kynge Henry the. viii. Cum priuilegio.; Catechismus. English",Creeds -- Early works to 1800.; Ten commandments -- Early works to 1800.,357,  London
+A00377,99841259,5828,"STC 10492; ESTC S105531",Free,"Erasmus, Desiderius, d. 1536.; Taverner, Richard, 1505?-1575.",1536,"A ryght frutefull epystle, deuysed by the moste excellent clerke Erasmns [sic], in laude and prayse of matrymony, translated in to Englyshe, by Rychard Tauernour, which translation he hathe dedicate to the ryght honorable Mayster Thomas Cromwel most worthy counseloure to our souerayne lorde kyng Henry the eyght. Cum priuilegio regali; Matrimonii encomium. English",Marriage -- Early works to 1800.,70,  London
+A00393,99845591,10500,"STC 10509; ESTC S109962",Free,"Erasmus, Desiderius, d. 1536.",1536,[A ryght excellent sermon and full of frute and edificacyon of the chylde Jesus.]; Concio de puero Jesu. English,"Sermons, English -- 16th century.",52,  London
 	
 This original file does not contain commas in the values. 
 
 But let's see what would happen if we introduced a comma into  `"Rodent-not censused"` - so that it looks like this: `"Rodent-not, censused"`. 
 
-1. Open the [species.csv](./data/biology/species.csv) file in Excel (or Calc in Libre Office).
-2. Add the comma (,) in `"Rodent-not censused"`.
+1. Open the [stccomma.csv](./data/humanities/stccomma.csv) file in Excel (or Calc in Libre Office).
+2. Add the comma (,) in `"STC 10509; ESTC S109962"`.
 3. Save the file under a **different name** (but also in the `csv` format) and reopen it in Excel.
 4. The issue with the "extra" incorrect column should not appear.
 
@@ -60,7 +57,7 @@ However, if you are working with already existing dataset in which the data valu
 
 If the dataset you're dealing with contains hundreds or thousands of records, cleaning them up manually (by either removing commas from the data values or putting the values into quotes - "") is not only going to take hours and hours but may potentially end up with you accidentally introducing many errors.
 
-Cleaning up datasets is one of major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. Other lessons in Data Carpentry covering shell, Python and R will give you the basis for developing skills to build relevant scripts.
+Cleaning up datasets is one of major problems in many humanities disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. Other lessons in Data Carpentry covering shell, Python and R will give you the basis for developing skills to build relevant scripts.
 
 
 ###Tab Separated Values format
