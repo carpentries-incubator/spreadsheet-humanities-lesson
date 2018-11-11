@@ -50,16 +50,16 @@ in each data column.
    values in the `Source` box.
 
 Let's try this out by setting the plot column in our spreadsheet to only allow
-plot values that are integers between 1 and 24.
+plot values that are integers between 1300 and 1700.
 
-1. Select the `plot_id` column
+1. Select the `Dates` column
 2. On the `Data` tab select `Data Validation`
 3. In the `Allow` box select `Whole number`
-4. Set the minimum and maximum values to 1 and 24.
+4. Set the minimum and maximum values to 1300 and 1700.
 
-![Image of Data Validation window for validating plot values](fig/plot_validation.png)
+![Image of Data Validation window for validating date values](fig/plot_validation.png)
 
-Now let's try entering a new value in the plot column that isn't a valid
+Now let's try entering a new value in the date column that isn't a valid
 plot. The spreadsheet stops us from entering the wrong value and asks us if we
 would like to try again.
 
@@ -78,7 +78,7 @@ option on the `Error Alert` tab.
 Quality assurance can make data entry easier as well as more robust. For
 example, if you use a list of options to restrict data entry, the spreadsheet
 will provide you with a drop-downlist of the available items. So, instead of
-trying to remember how to spell *Dipodomys spectabilis*, you can just select the
+trying to remember the variants of  *London* that exist, you can just select the
 right option from the list.
 
 ![Image of drop-down menu](fig/drop_down_list.png)
@@ -89,22 +89,21 @@ right option from the list.
 
 **readMe (README) files:** As you start manipulating your data files, create a readMe document / text file to keep track of your files and document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent researcher. Your readMe file should document all of the files in your data set (including documentation), describe their content and format, and lay out the organizing principles of folders and subfolders. For each of the separate files listed, it is a good idea to document the manipulations or analyses that were carried out on those data.
 
-<!-- [Example: converting all data to values: use soybean aphid suction trap dataset for this section] -->
+<!-- [Example: converting all data to values: use EEBO messy dataset for this section] -->
 
 ## Sorting
 **Bad values often sort to bottom or top of the column**. For example, if your data should be numeric, then alphabetical and null data will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. 
 If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.
 
-Let's try this with the *1980* tab in our messy spreadsheet. Go to that tab. Select
-**Data** then select **Sort**
+Let's try this in our messy spreadsheet. Select **Data** then select **Sort**
 
-Sort by *wgt* in the order *Smallest to Largest*
+Sort by *Date* in the order *Smallest to Largest*
 
 ![Figure of Sorting menu](fig/sorting.png)
 
 - When you do this sort, do you notice anything strange?
 
-- Try sorting by *species*. Anything strange there?
+- Try sorting by *Place*. Anything strange there?
 
 
 ## Conditional formatting ##
@@ -113,11 +112,10 @@ Use with caution! But a great way to flag inconsistent values when entering data
 Conditional formatting basically can do something like color code your values by some
 criteria or lowest to highest. This makes it easy to scan your data for outliers.
 
-Let's try this again with weight. Go to **Format** then **Conditional Formatting**.
+Let's try this again with Dates. Select the Dates column, Go to **Format** then **Conditional Formatting**.
 
-We'll do the *2-Color Scale* with Lowest to Highest for the orange colors. Then we'll 
-apply that to the *wgt* column again. Now we can scan through and different colors will
-stand out. Again, do we notice any strange values?
+We'll do the *2-Color Scale* with Lowest to Highest for the orange colors. Now we can scan through and 
+different colors will stand out. Again, do we notice any strange values?
 
 It is nice to do be able to do these scans in spreadsheets, but we also can do these
 checks in a programming language like R, or in OpenRefine or SQL. 
