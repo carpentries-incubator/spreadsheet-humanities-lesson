@@ -3,15 +3,13 @@
 #------------------------------------------------------------
 
 # Which carpentry is this ("swc", "dc", or "lc")?
-carpentry: "dc"
+carpentry: "incubator"
 
 # Overall title for pages.
 title: "Data Organization in Spreadsheets"
 
-# Contact.  This *must* include the protocol: if it's an email
-# address, it must look like "mailto:lessons@software-carpentry.org",
-# or if it's a URL, "https://gitter.im/username/ProjectName".
-contact: "mailto:lessons@datacarpentry.org"
+# Contact email address
+email: "team@carpentries.org"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -50,24 +48,38 @@ start_time: 0
 collections:
   episodes:
     output: true
-    permalink: /:path/
+    permalink: /:path/index.html
   extras:
     output: true
+    permalink: /:path/index.html
 
 # Set the default layout for things in the episodes collection.
 defaults:
   - values:
-      root: ..
+      root: .
+      layout: page
   - scope:
       path: ""
       type: episodes
     values:
+      root: ..
       layout: episode
+  - scope:
+      path: ""
+      type: extras
+    values:
+      root: ..
+      layout: page
 
 # Files and directories that are not to be copied.
 exclude:
   - Makefile
   - bin
+  - .Rproj.user/
+
 
 # Turn off built-in syntax highlighting.
-highlighter: false
+highlighter: rouge
+
+# remote theme
+remote_theme: carpentries/carpentries-theme
