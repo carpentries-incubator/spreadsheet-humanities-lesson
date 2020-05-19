@@ -11,6 +11,10 @@ title: "Data Organization in Spreadsheets"
 # Contact email address
 email: "team@carpentries.org"
 
+# Life cycle stage of the lesson
+# possible values: "pre-alpha", "alpha", "beta", "stable"
+life_cycle: "pre-alpha"
+
 #------------------------------------------------------------
 # Generic settings (should not need to change).
 #------------------------------------------------------------
